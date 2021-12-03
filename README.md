@@ -3,8 +3,6 @@
 This project demonstrates creating and interacting with a ZingChart instance using React.
 It's written using React 17 function components and hooks.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Running the demo
 
 You'll need an environment with `node`, `npm`, and `yarn` installed.
