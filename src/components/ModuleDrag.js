@@ -89,7 +89,7 @@ function ModuleDrag() {
 
   return <div>
     <div>Goals met {goodDays} days this week</div>
-    <ZingChart ref={chart} data={config} height='600px' modules='dragging' plot_mouseup={showData}/>
+    <ZingChart ref={chart} data={config} height='600px' modules='dragging' zingchart_plugins_dragging_complete={showData}/>
   </div>
 }
 
