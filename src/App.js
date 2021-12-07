@@ -16,11 +16,18 @@ import License from './components/License.js';
 import './App.css';
 
 function App() {
+  const txt_simple = 'Demonstrates a simple chart of static data';
+  const txt_module_chart = 'Demonstrates explicitly importing ZingChart modules';
+  const txt_module_drag = 'Demonstrates interacting with a chart to change data';
+  const txt_dynamic = 'Demonstrates modifying the configuration of an existing chart';
+  const txt_events = 'Demonstrates responding to chart events';
+  const txt_methods = 'Demonstrates using a reference to a ZingChart element to invoke methods on it';
+  const txt_license = 'Demonstrates setting the license key and performance flags on the ZingChart object, as well as multiple plots in one chart';
+
   return (
     <div className="App">
       <header className="App-header">
         <h2>zingchart-react Demo</h2>
-        <h6>A simple example of binding data, mutations with methods, and listening to events</h6>
         <div className="App-buttonbar">
           <NavLink to="/" className={({isActive}) => isActive ? "App-button-active" : "App-button-plain"}>Simple</NavLink>
           <NavLink to="/module-chart" className={({isActive}) => isActive ? "App-button-active" : "App-button-plain"}>Module Chart</NavLink>
@@ -30,6 +37,15 @@ function App() {
           <NavLink to="/methods" className={({isActive}) => isActive ? "App-button-active" : "App-button-plain"}>Methods</NavLink>
           <NavLink to="/license" className={({isActive}) => isActive ? "App-button-active" : "App-button-plain"}>License</NavLink>
         </div>
+        <Routes>
+          <Route exact path="/" element={<h4>{txt_simple}</h4>} />
+          <Route path="/module-chart" element={<h4>{txt_module_chart}</h4>} />
+          <Route path="/module-drag" element={<h4>{txt_module_drag}</h4>} />
+          <Route path="/dynamic" element={<h4>{txt_dynamic}</h4>} />
+          <Route path="/events" element={<h4>{txt_events}</h4>} />
+          <Route path="/methods" element={<h4>{txt_methods}</h4>} />
+          <Route path="/license" element={<h4>{txt_license}</h4>} />
+        </Routes>
       </header>
       <Routes>
         <Route exact path="/" element={<Simple />} />

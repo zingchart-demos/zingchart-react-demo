@@ -9,13 +9,16 @@
   align-items: center;
   justify-content: center;
   font-size: 120%;
-  color: white;
+  color: rgb(92, 91, 91);
+}
+
+.App-header h2 {
+  color: #4CAF50;
 }
 
 .App-buttonbar {
   display: flex;
   flex-direction: row;
-  padding-bottom: 2em;
 }
 
 [class*="App-button-"] {
@@ -36,7 +39,7 @@
 }
 
 .App-button-active {
-  color: black;
+  color: rgb(56, 56, 56);
 }
 
 .App-button-plain:hover {
