@@ -5,13 +5,13 @@ It's written using React 17 function components and hooks.
 
 ## Running the demo
 
-You'll need an environment with `node`, `npm`, and `yarn` installed.
+You'll need an environment with `node` and `npm` installed.
 After cloning this repository:
 
 ```
 cd zingchart-react-demo
-yarn install
-yarn start
+npm install
+npm run start
 ```
 
 You should then be able to view the demo in your browser at `localhost:3000`.
@@ -22,7 +22,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```
 npx create-react-app zingchart-react-demo
 cd zingchart-react-demo
-yarn start
-yarn add zingchart-react
-yarn add react-router-dom
+npm install
+npm install zingchart-react
+npm install react-router-dom
+npm run start
 ```
+
+Note: ZingChart does not currently list React 17 as a valid dependency, we bypass the error message in the `.npmrc` file.
